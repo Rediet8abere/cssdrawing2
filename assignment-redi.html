@@ -1,0 +1,90 @@
+<style>
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
+<div class="container">
+  <div class="t1"></div>
+  <div class="t2"></div>
+  <div class="t3"></div>
+  <div class="t4-tria"></div>
+  <div class="t5-trap"></div>
+  <div class="t6-trap"></div>
+</div>
+
+<style>
+  .container {
+    width: 600px;
+    height:600px;
+    border: 1px solid black;
+    position:relative;
+  }
+
+  .t1 {
+    width: 100px;
+    height: 395px;
+    border: 4px solid brown;
+    position:absolute;
+    left:240px;
+    background-color: black;
+  }
+
+  .t2 {
+    width: 595px;
+    height: 100px;
+    border: 4px solid black;
+    position:absolute;
+    top:130px;
+    background-color: black;
+  }
+
+  .t3 {
+
+    width: 195px;
+    height: 90px;
+    border: 4px solid black;
+    position:absolute;
+    top:400px;
+    left:50px;
+    background-color: black;
+  }
+
+  .t4-tria {
+    width: 0;
+    height: 0;
+    position:absolute;
+    top:400px;
+    left:250px;
+    border-top: 100px solid black;
+    border-right: 100px solid transparent;
+  }
+
+  .t5-trap {
+    position:absolute;
+    top:170px;
+    left:71px;
+    border-bottom: 70px solid white;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    height: 0;
+    width: 100px;
+  }
+
+  .t6-trap {
+    position:absolute;
+    top:173px;
+    left:347px;
+    border-bottom: 70px solid white;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    height: 0;
+    width: 100px;
+  }
+</style>
