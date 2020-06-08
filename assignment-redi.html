@@ -14,12 +14,55 @@
   <div class="t1"></div>
   <div class="t2"></div>
   <div class="t3"></div>
+
+  <div class="hl1"></div>
+  <div class="hl2"></div>
+
+
   <div class="t4-tria"></div>
+  <div class="t7-tria"></div>
+  <div class="hl6"></div>
+  <div class="vl6"></div>
+
   <div class="t5-trap"></div>
   <div class="t6-trap"></div>
+
+  <div class="t8-trap"></div>
+  <div class="t9-trap"></div>
+
+  <div class="hl3"></div>
+  <div class="hl4"></div>
 </div>
 
 <style>
+  .t7-tria {
+    width: 0;
+    height: 0;
+    position:absolute;
+    top:442.5px;
+    left:290px;
+    border-top: 85px solid black;
+    border-right: 85px solid transparent;
+    margin:-38px;
+  }
+
+  .hl6 {
+    position:absolute;
+    top:399px;
+    left:244px;
+    border-top: 5px solid black;
+    height: 50px;
+    width: 100px;
+  }
+
+  .vl6 {
+    position:absolute;
+    top:399px;
+    left:248px;
+    border-left: 4px solid black;
+    height: 90px;
+    width: 100px;
+  }
   .container {
     width: 600px;
     height:600px;
@@ -31,6 +74,7 @@
     width: 100px;
     height: 395px;
     border: 4px solid brown;
+    border-bottom: 4px solid transparent;
     position:absolute;
     left:240px;
     background-color: black;
@@ -40,19 +84,41 @@
     width: 595px;
     height: 100px;
     border: 4px solid black;
+    border-left: 4px solid brown;
+    border-right: 4px solid brown;
+    border-top: 4px solid brown;
+    border-bottom: 4px solid brown;
     position:absolute;
     top:130px;
     background-color: black;
   }
 
-  .t3 {
+  .hl1 {
+    position:absolute;
+    top:130px;
+    left:244px;
+    border-top: 4px solid black;
+    height: 50px;
+    width: 100px;
+  }
 
+  .hl2 {
+    position:absolute;
+    top:234px;
+    left:244px;
+    border-top: 4px solid black;
+    height: 50px;
+    width: 110px;
+  }
+
+  .t3 {
     width: 195px;
     height: 90px;
-    border: 4px solid black;
+    border: 4px solid brown;
+    border-right: 4px solid transparent;
     position:absolute;
     top:400px;
-    left:50px;
+    left:46px;
     background-color: black;
   }
 
@@ -61,16 +127,16 @@
     height: 0;
     position:absolute;
     top:400px;
-    left:250px;
-    border-top: 100px solid black;
+    left:248px;
+    border-top: 100px solid brown;
     border-right: 100px solid transparent;
   }
 
   .t5-trap {
     position:absolute;
-    top:170px;
+    top:168px;
     left:71px;
-    border-bottom: 70px solid white;
+    border-bottom: 70px solid brown;
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
     height: 0;
@@ -79,12 +145,54 @@
 
   .t6-trap {
     position:absolute;
-    top:173px;
+    top:168px;
+    left:347px;
+    border-bottom: 70px solid brown;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    height: 0;
+    width: 100px;
+  }
+
+  .t8-trap {
+    position:absolute;
+    top:168px;
+    left:71px;
+    border-bottom: 70px solid white;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    height: 0;
+    width: 100px;
+    transform: scale(0.92,0.92);
+  }
+
+  .hl3 {
+    position:absolute;
+    top:234px;
+    left:354px;
+    border-top: 4px solid white;
+    height: 50px;
+    width: 156px;
+  }
+
+  .hl4 {
+    position:absolute;
+    top:234px;
+    left:78px;
+    border-top: 4px solid white;
+    height: 50px;
+    width: 156px;
+  }
+
+  .t9-trap {
+    position:absolute;
+    top:168px;
     left:347px;
     border-bottom: 70px solid white;
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
     height: 0;
     width: 100px;
+    transform: scale(0.92,0.92);
   }
 </style>
