@@ -1,0 +1,240 @@
+$hl-left:244px;
+$hl-vl-top:399px;
+$trap-top:168px;
+$bb:100px;
+$bl:25px;
+$bbb:70px;
+$bll:35px;
+@for $i from 1 to 6 {
+    h#{$i} {
+        font-size: (7- $i) * 12px;
+    }
+}
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+    
+    .t7-tria {
+      width: 0;
+      height: 0;
+      position:absolute;
+      top:442.5px;
+      left:290px;
+      border-top: 85px solid #ff9a76;
+      border-right: 85px solid transparent;
+      margin:-38px;
+    }
+  
+    .hl6 {
+      position:absolute;
+      top:$hl-vl-top;
+      left:$hl-left;
+      border-top: 5px solid #ff9a76;
+      height: 50px;
+      width: 100px;
+    }
+  
+    .vl6 {
+      position:absolute;
+      top:$hl-vl-top;
+      left:248px;
+      border-left: 4px solid #ff9a76;
+      height: 90px;
+      width: 100px;
+    }
+    .container {
+      width: 600px;
+      height:600px;
+      /* border: 1px solid #ff9a76; */
+      position:relative;
+    }
+  
+    .t1 {
+      width: 100px;
+      height: 395px;
+      border: 4px solid  #eb6737;
+      border-bottom: 4px solid transparent;
+      position:absolute;
+      left:240px;
+      background-color: #ff9a76;
+    }
+  
+    .t2 {
+      width: 595px;
+      height: 100px;
+      border: 4px solid #ff9a76;
+      border-left: 4px solid  #eb6737;
+      border-right: 4px solid #eb6737;
+      border-top: 4px solid  #eb6737 ;
+      border-bottom: 4px solid  #eb6737;
+      position:absolute;
+      top:130px;
+      background-color: #ff9a76;
+    }
+  
+    .hl1 {
+      position:absolute;
+      top:130px;
+      left:$hl-left;
+      border-top: 4px solid #ff9a76;
+      height: 50px;
+      width: 100px;
+    }
+  
+    .hl2 {
+      position:absolute;
+      top:234px;
+      left:$hl-left;
+      border-top: 4px solid #ff9a76;
+      height: 50px;
+      width: 110px;
+    }
+  
+    .t3 {
+      width: 195px;
+      height: 90px;
+      border: 4px solid  #eb6737;
+      border-right: 4px solid transparent;
+      position:absolute;
+      top:400px;
+      left:46px;
+      background-color: #ff9a76;
+    }
+  
+    
+  
+    .t4-tria {
+      width: 0;
+      height: 0;
+      position:absolute;
+      top:400px;
+      left:248px;
+      border-top: $bb solid  #eb6737;
+      border-right: $bb solid transparent;
+    }
+  
+    .t5-trap {
+      position:absolute;
+      top:$trap-top;
+      left:71px;
+      border-bottom: $bbb solid  #eb6737;
+      border-left: $bll solid transparent;
+      border-right: $bll solid transparent;
+      height: 0;
+      width: 100px;
+    }
+  
+    .t6-trap {
+      position:absolute;
+      top:$trap-top;
+      left:347px;
+      border-bottom: $bbb solid  #eb6737;
+      border-left: $bll solid transparent;
+      border-right: $bll solid transparent;
+      height: 0;
+      width: 100px;
+    }
+  
+    .t8-trap {
+      position:absolute;
+      top:$trap-top;
+      left:71px;
+      border-bottom: $bbb solid brown;
+      border-left: $bll solid transparent;
+      border-right: $bll solid transparent;
+      height: 0;
+      width: 100px;
+      transform: scale(0.92,0.92);
+    }
+  
+    .hl3 {
+      position:absolute;
+      top:234px;
+      left:354px;
+      border-top: 4px solid brown;
+      height: 50px;
+      width: 156px;
+      &:hover {
+        border-top: 4px solid black;
+      }
+    }
+  
+    .hl4 {
+      position:absolute;
+      top:234px;
+      left:78px;
+      border-top: 4px solid brown;
+      height: 50px;
+      width: 156px;
+      &:hover {
+        border-top: black;
+      }
+    }
+
+  
+  
+    .t9-trap {
+      position:absolute;
+      top:$trap-top;
+      left:347px;
+      border-bottom: $bbb solid brown;
+      border-left: $bll solid transparent;
+      border-right: $bll solid transparent;
+      height: 0;
+      width: 100px;
+      transform: scale(0.92,0.92);
+    }
+
+  
+  
+    .c-trap {
+        position:absolute;
+        top:350px;
+        left:225px;
+        border-bottom: $bb solid brown;
+        border-left: $bl solid transparent;
+        border-right: $bl solid transparent;
+        transform: scale(4.5);
+        height: 0;
+        width: 100px;
+        transition: 400ms;
+        &:hover {
+            border-bottom: 100px solid white;
+          }
+      }
+  
+    
+  
+    .hat-trap {
+      position:absolute;
+      top:50px;
+      left:225px;
+      border-bottom: $bb solid black;
+      border-left: $bl solid transparent;
+      border-right: $bl solid transparent;
+      border-radius: 55px 55px 0 0;
+      transform: scale(2.5);
+      height: 0;
+      width: 100px;
+      transition: all .3s ease-in-out;
+      &:hover {
+        border-radius: 150px 150px 0 0;
+        animation-name: example;
+        animation-duration: 4s;
+      }
+    }
+  
+    
+  
+    @keyframes example {
+    from {background-color: black;}
+    to {background-color: yellow;}
+  }
+  
